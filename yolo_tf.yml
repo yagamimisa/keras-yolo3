@@ -1,0 +1,12 @@
+name: yolo_tf
+channels:
+        - anaconda
+        - conda-forge
+dependencies:
+        - python = 3.6
+        - tensorflow-gpu
+        - matplotlib
+        - numpy
+        - scipy
+        - keras
+        - opencv
