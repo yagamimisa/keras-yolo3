@@ -1,13 +1,15 @@
 import argparse
 import os
 import numpy as np
-from keras.layers import Conv2D, Input, BatchNormalization, LeakyReLU, ZeroPadding2D, UpSampling2D
-from keras.layers.merge import add, concatenate
-from keras.models import Model
+from tensorflow.python.keras.layers import Conv2D, Input, BatchNormalization, LeakyReLU, ZeroPadding2D, UpSampling2D
+from tensorflow.python.keras.layers.merge import add, concatenate
+from tensorflow.python.keras.models import Model
+from tensorflow.python.keras import backend
 import struct
 import cv2
+import sys
 
-np.set_printoptions(threshold=np.nan)
+np.set_printoptions(threshold=sys.maxsize)
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
